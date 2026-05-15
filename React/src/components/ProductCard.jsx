@@ -18,14 +18,14 @@ export default function ProductCard({ product }) {
                             <p className="product-card-price">${product.price.toFixed(2)}</p>
                             <div className="product-card-actions">
                                 <Link to={`/product/${product.id}`} className="btn btn-secondary">View Details</Link>
+                                <button
+                                    className="btn btn-primary"
+                                    onClick={() => addToCart(product.id)}
+                                >
+                                    Add to Cart {productQuantityLabel}
+                                </button>
                             </div>
                         </div>
-                            <button
-                                className="btn btn-primary"
-                                onClick={() => addToCart(product.id)}
-                            >
-                                Add to Cart {productQuantityLabel}
-                            </button>
                     </div>
         );
     }
