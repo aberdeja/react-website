@@ -23,6 +23,7 @@ export default function Navbar() {
               <Link to="/about" className="navbar-link">
                 About
               </Link>
+            
             </div>
             <div className="navbar-auth">
                 <div className="navbar-auth-links">
