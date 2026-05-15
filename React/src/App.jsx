@@ -7,12 +7,14 @@ import Checkout from './pages/Checkout.jsx';
 import Navbar from './components/Navbar.jsx';
 import './App.css'
 import AuthProvider from './context/AuthContext.jsx';
+import CartProvider from './context/CartContext.jsx';
 import ProductDetails from './pages/ProductDetails.jsx';
 
 function App() {
  return (
     <>
     <AuthProvider>
+      <CartProvider>
       <div className="app">
         <Navbar />
         <Routes>
@@ -25,6 +27,7 @@ function App() {
           <Route path="/product/:id" element={<ProductDetails />} />
         </Routes>
       </div>
+      </CartProvider>
     </AuthProvider>
     </>
   );
