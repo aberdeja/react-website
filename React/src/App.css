@@ -169,6 +169,9 @@ body {
 .product-card-actions {
   display: flex;
   gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .product-detail {
